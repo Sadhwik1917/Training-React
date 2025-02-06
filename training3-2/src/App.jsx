@@ -62,15 +62,34 @@
 
 //^ Prop Drilling
 
-import React from 'react'
-import Child1 from './propsexample/Child1'
+// import React from 'react'
+// import Child1 from './propsexample/Child1'
 
-const App = () => {
-  return (
-    <div>App
-      <Child1 university="MRU"/>
-    </div>
-  )
+// const App = () => {
+//   return (
+//     <div>App
+//       <Child1 university="MRU"/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+//* State components
+
+import React, { Component } from 'react'
+import CBCStateEx from './stateExample/CBCStateEx'
+import CounterEX from './stateExample/CBCCounterEX'
+import FBCStateEx from './stateExample/FBCStateEx'
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* <CBCStateEx/> */}
+        {/* <CounterEX/> */}
+        <FBCStateEx/>
+      </div>
+    )
+  }
 }
-
-export default App
