@@ -77,19 +77,35 @@
 
 //* State components
 
-import React, { Component } from 'react'
-import CBCStateEx from './stateExample/CBCStateEx'
-import CounterEX from './stateExample/CBCCounterEX'
-import FBCStateEx from './stateExample/FBCStateEx'
+// import React, { Component } from 'react'
+// import CBCStateEx from './stateExample/CBCStateEx'
+// import CounterEX from './stateExample/CBCCounterEX'
+// import FBCStateEx from './stateExample/FBCStateEx'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        {/* <CBCStateEx/> */}
-        {/* <CounterEX/> */}
-        <FBCStateEx/>
-      </div>
-    )
-  }
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         {/* <CBCStateEx/> */}
+//         {/* <CounterEX/> */}
+//         <FBCStateEx/>
+//       </div>
+//     )
+//   }
+// }
+
+
+//* Basic Hooks
+
+import React from 'react'
+import ExUseEffect from './Hooks/ExUseEffect'
+
+const App = () => {
+  return (
+    <div>
+      <ExUseEffect/>
+    </div>
+  )
 }
+
+export default App
